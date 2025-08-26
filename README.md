@@ -34,7 +34,7 @@ or any other **bash** terminal of your choice
 
 **OR**
 
-Use makefile
+Use Makefile (no code installation is needed)
 
 ##  <a name='Sample'></a>📝 Sample
 
@@ -45,6 +45,18 @@ Use makefile
 
 ```bash
 $ ./src/hashtag.sh My Header
+# ################################################################ #
+#                            My Header                             #
+# ################################################################ #
+```
+
+</details>
+
+<details>
+<summary>Bash Command (Makefile):</summary>
+
+```bash
+$ make python My Header
 # ################################################################ #
 #                            My Header                             #
 # ################################################################ #
@@ -87,6 +99,18 @@ print(subtraction(addition(2, 3), 2))
 
 ```bash
 $ ./src/double_slash.sh My Header
+    /*//////////////////////////////////////////////////////////////
+                               My Header
+    //////////////////////////////////////////////////////////////*/
+```
+
+</details>
+
+<details>
+<summary>Bash Command: (Makefile)</summary>
+
+```bash
+$ make java My Header
     /*//////////////////////////////////////////////////////////////
                                My Header
     //////////////////////////////////////////////////////////////*/
@@ -144,6 +168,18 @@ $ ./src/SGML.sh My Header
 </details>
 
 <details>
+<summary>Bash Command: (Makefile)</summary>
+
+```bash
+$ make html My Header
+<!------------------------------------------------------------------------------>
+<!--                                 My Header                                -->
+<!------------------------------------------------------------------------------>
+```
+
+</details>
+
+<details>
 <summary>sample usage in code:</summary>
 
 ```html
@@ -172,3 +208,8 @@ $ ./src/SGML.sh My Header
 ```
 
 </details>
+
+<br>
+<br>
+
+inspired by [transmission11](https://github.com/transmissions11/headers)
