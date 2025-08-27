@@ -24,7 +24,7 @@ Bash scripts that create formatted header comments
 
 or any other **bash** terminal of your choice <br> 
 
-> *(this requirement only neccessary if you import the bash codes)*
+*(this requirement only neccessary if you import the bash codes)*
 
 ##  <a name='Usage'></a>✨ Usage
 
