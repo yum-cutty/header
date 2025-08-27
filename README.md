@@ -22,7 +22,9 @@ Bash scripts that create formatted header comments
 
 [Git Bash](https://git-scm.com/downloads) - recommended terminal for non-linux users <br>
 
-or any other **bash** terminal of your choice
+or any other **bash** terminal of your choice <br> 
+
+> *(this requirement only neccessary if you import the bash codes)*
 
 ##  <a name='Usage'></a>✨ Usage
 
