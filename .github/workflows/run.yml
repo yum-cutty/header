@@ -1,0 +1,32 @@
+name: Run Header Generator
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  generate-headers:
+    name: ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install make (Windows)
+        if: runner.os == 'Windows'
+        run: choco install make --yes
+        shell: powershell
+
+      - name: double-slash header
+        run: make java Hello World
+
+      - name: SGML header
+        run: make html Hello World
+
+      - name: hashtag header
+        run: make python Hello World

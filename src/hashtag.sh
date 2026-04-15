@@ -1,20 +1,16 @@
 #!/bin/bash
+source "$(dirname "$0")/../Lib/helpers.sh"
 
-# Check if a title is provided
-if [ -z "$1" ]; then
-  echo "Usage: ./hashtag.sh <title>"
-  exit 1
-fi
+# ============================
+# Process the input argument
+# ============================
 
-# Capture the input title
-TITLE="$*"
+init $FOUR "$@"
 
-# Calculate padding to center the title
-TITLE_LENGTH=${#TITLE}
-TOTAL_WIDTH=66 
-PADDING=$(( (TOTAL_WIDTH - TITLE_LENGTH - 2) / 2 )) 
-
+# ============================
 # Create the header
-echo "# $(printf '#%.0s' {1..64}) #"
-printf "# %${PADDING}s%s%$((TOTAL_WIDTH - TITLE_LENGTH - PADDING - 2))s #\n" "" "$TITLE" ""
-echo "# $(printf '#%.0s' {1..64}) #"
+# ============================
+
+echo   "# $(printf '#%.0s' $(seq 1 $INNER_WIDTH)) #"
+printf "# %${PADDING}s%s%$((INNER_WIDTH - INPUT_LENGTH - PADDING))s #\n" "" "$INPUT" ""
+echo   "# $(printf '#%.0s' $(seq 1 $INNER_WIDTH)) #"
